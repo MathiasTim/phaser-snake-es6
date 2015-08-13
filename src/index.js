@@ -1,17 +1,20 @@
 import Menu from './states/Menu';
+import Game from './states/Game';
+import GameOver from './states/GameOver';
 
-class Game extends Phaser.Game {
+class Snake extends Phaser.Game {
 
   constructor() {
     super(600, 450, Phaser.AUTO, 'content', null);
-    this.addMenu();
-  }
-
-  addMenu() {
-    this.state.add('Menu', Menu, false);
+    this.addStates();
     this.state.start('Menu');
   }
 
+  addStates() {
+    this.state.add('Menu', Menu, false);
+    this.state.add('Game', Game, false);
+    this.state.add('GameOver', GameOver, false);
+  }
 }
 
-new Game();
+new Snake();

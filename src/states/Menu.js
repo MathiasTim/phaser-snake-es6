@@ -5,7 +5,11 @@ class Menu extends Phaser.State {
   }
 
   create() {
-    this.add.sprite(0, 0, 'menu');
+    this.add.button(0, 0, 'menu', this.startGame, this);
+  }
+
+  startGame() {
+    this.state.start('Game');
   }
 
 }
