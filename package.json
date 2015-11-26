@@ -1,5 +1,5 @@
 {
-  "name": "phaser-es6-boilerplate",
+  "name": "phaser-snake-es6",
   "version": "1.0.1",
   "description": "Tiny flexible template for writing Phaser games in ES6/ES2015 with Babel.",
   "main": "src/index.js",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/belohlavek/phaser-es6-boilerplate"
+    "url": "https://github.com/phaser-snake-es6"
   },
-  "author": "Daniel Belohlavek",
+  "author": "MathiasTim",
   "license": "MIT",
   "devDependencies": {
     "babelify": "^6.1.3",
